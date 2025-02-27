@@ -30,7 +30,7 @@ export default function RootLayout({
     <body className={`${poppins.variable} ${rubik.variable}`}>
       <main
         className={cn(
-          "flex  relative  break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-amber-500"
+          "flex  relative  break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20"
         )}
       >
         {/* NAVBAR ->  */}

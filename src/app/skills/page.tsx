@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <div>
-      Teste
+      Skills
     </div>
   )
 }
