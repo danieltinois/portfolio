@@ -21,10 +21,7 @@ const About = () => {
       </Badge>
 
       <div className="flex flex-col gap-5 w-full">
-        <Heading>
-          Engenheiro de Software e Web <br className="hidden sm:block" />
-          Developer, Morando no Brasil.
-        </Heading>
+        <Heading>Engenheiro de Software | Web Developer | Brasil</Heading>
 
         <FramerWrapper y={0} x={100}>
           <p className="font-poppins text-lg sm:text-xl w-full text-primary leading-relaxed">
