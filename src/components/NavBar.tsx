@@ -24,12 +24,12 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const data = [
     {
-      title: "Home",
+      title: "Pagina Inicial",
       icon: <HomeIcon className="h-full w-full " />,
       href: "/",
     },
     {
-      title: "About",
+      title: "Sobre Mim",
       icon: <User className="h-full w-full " />,
       href: "/about",
     },
@@ -39,18 +39,18 @@ const Navbar = () => {
       href: "/skills",
     },
     {
-      title: "Education",
+      title: "Educação",
       icon: <GraduationCap className="h-full w-full " />,
       href: "/education",
     },
     {
-      title: "Projects",
+      title: "Projetos",
       icon: <FolderGit2 className="h-full w-full " />,
       href: "/projects",
     },
 
     {
-      title: "Contact us",
+      title: "Contate-me",
       icon: <Mail className="h-full w-full " />,
       href: "/contact",
     },

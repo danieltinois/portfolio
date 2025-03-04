@@ -1,9 +1,10 @@
-import { Linkedin } from "lucide-react";
+import { Github, Linkedin, RedoDotIcon } from "lucide-react";
 import React from "react";
 import FramerWrapper from "./animation/FramerWrapper";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { PiRedditLogoBold } from "react-icons/pi";
 
 const SocialLinks = () => {
   const links = [
@@ -11,6 +12,16 @@ const SocialLinks = () => {
       name: "Linkedin",
       link: "https://www.linkedin.com/in/danieltinois/",
       icon: <Linkedin />,
+    },
+    {
+      name: "GitHub",
+      link: "https:/github.com/danieltinois/",
+      icon: <Github />,
+    },
+    {
+      name: "Reddit",
+      link: "https://www.reddit.com/user/Driko0/",
+      icon: <PiRedditLogoBold size={30} />,
     },
   ];
   return (
