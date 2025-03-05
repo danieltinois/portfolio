@@ -1,9 +1,9 @@
-import SkillsAnimation from '@/components/SkillsAnimation';
-import React from 'react';
+import SkillsAnimation from "@/components/SkillsAnimation";
+import React from "react";
 
 const Skills = () => {
   return (
-    <div>
+    <div className="">
       <SkillsAnimation />
     </div>
   );
