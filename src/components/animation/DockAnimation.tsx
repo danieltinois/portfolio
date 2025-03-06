@@ -9,7 +9,7 @@ import {
   type SpringOptions,
   AnimatePresence,
 } from 'framer-motion';
-import {
+import React, {
   Children,
   cloneElement,
   createContext,
@@ -37,7 +37,7 @@ type DockProps = {
 };
 type DockItemProps = {
   className?: string;
-  children: ReactElement | ReactElemen[];
+  children: ReactElement | ReactElement[];
 };
 type DockLabelProps = {
   className?: string;
@@ -162,7 +162,15 @@ function DockItem({ children, className }: DockItemProps) {
       aria-haspopup="true"
     >
       {Children.map(children, (child) =>
-        cloneElement(child, { width, isHovered }),
+        React.isValidElement(child) && typeof child.type !== 'string'
+          ? cloneElement(
+              child as ReactElement<{
+                width?: MotionValue<number>;
+                isHovered?: MotionValue<number>;
+              }>,
+              { width, isHovered },
+            )
+          : child,
       )}
     </motion.div>
   );
