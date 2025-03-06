@@ -36,7 +36,7 @@ type DockProps = {
 };
 type DockItemProps = {
   className?: string;
-  children: React.ReactElement | React.ReactElement[];
+  children: ReactElement | ReactElemen[];
 };
 type DockLabelProps = {
   className?: string;
