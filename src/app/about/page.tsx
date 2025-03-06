@@ -1,16 +1,16 @@
-import Aboutfooter from "@/components/Aboutfooter";
-import FramerWrapper from "@/components/animation/FramerWrapper";
-import Heading from "@/components/Heading";
-import { Badge } from "@/components/ui/badge";
-import { Circle, Heart, User2 } from "lucide-react";
+import Aboutfooter from '@/components/Aboutfooter';
+import FramerWrapper from '@/components/animation/FramerWrapper';
+import Heading from '@/components/Heading';
+import { Badge } from '@/components/ui/badge';
+import { Circle, Heart, User2 } from 'lucide-react';
 
 const About = () => {
   const items = [
-    { hobby: "💻 Programar" },
-    { hobby: "🎮 Jogar Video Game" },
-    { hobby: "📺 Assistir Animes" },
-    { hobby: "🏋️ Academia" },
-    { hobby: "⚽ Futebol" },
+    { hobby: 'Programar' },
+    { hobby: 'Jogar Video Game' },
+    { hobby: 'Assistir Animes' },
+    { hobby: 'Academia' },
+    { hobby: 'Futebol' },
   ];
 
   return (
@@ -25,17 +25,17 @@ const About = () => {
 
         <FramerWrapper y={0} x={100}>
           <p className="font-poppins text-lg sm:text-xl w-full text-primary leading-relaxed">
-            💻{" "}
+            💻{' '}
             <strong>Desenvolvedor Full Stack | Engenheiro de Software</strong>
             🇧🇷 Sou um desenvolvedor apaixonado por tecnologia, sempre buscando
-            aprimorar minhas habilidades. 🚀 Especializado em{" "}
+            aprimorar minhas habilidades. 🚀 Especializado em{' '}
             <strong>
               JavaScript, TypeScript, React, Next.js, Node.js, C# e .NET
             </strong>
-            , criando aplicações{" "}
-            <strong>modernas, responsivas e eficientes</strong>. 🎨 Foco em{" "}
-            <strong>interfaces pixel-perfect</strong> e experiências{" "}
-            <strong>intuitivas</strong>, unindo <strong>design elegante</strong>{" "}
+            , criando aplicações{' '}
+            <strong>modernas, responsivas e eficientes</strong>. 🎨 Foco em{' '}
+            <strong>interfaces pixel-perfect</strong> e experiências{' '}
+            <strong>intuitivas</strong>, unindo <strong>design elegante</strong>{' '}
             e <strong>funcionalidade robusta</strong>. 🔥 Sempre em busca de
             novos desafios e oportunidades para evoluir!
           </p>
