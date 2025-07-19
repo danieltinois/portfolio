@@ -24,20 +24,20 @@ export async function fetchPortfolioRepos(): Promise<Project[]> {
     });
 
     return res.data
+        .filter((r) => (r as any).topics?.includes('portfolio'))
         .map((r) => {
-            const topics: string[] = (r as any).topics ?? [];
-            if (!topics.includes('portfolio')) return null;
             const og = (r as any).open_graph_image_url as string | undefined;
-
+            const raw = `https://raw.githubusercontent.com/${username}/${r.name}/main/cover.png`;
+            const local = `/projects/${r.name}.png`;
+            const placeholder = '/projects/placeholder.png';
             return {
                 slug: r.name,
                 name: r.name.replace(/-/g, ' '),
                 description: r.description ?? '',
-                techs: topics.filter((t) => t !== 'portfolio'),
+                techs: (r as any).topics.filter((t: string) => t !== 'portfolio'),
                 repo: r.html_url,
                 demo: r.homepage || undefined,
-                cover: og ?? '/projects/placeholder.png',
+                cover: og || raw || local || placeholder,
             };
-        })
-        .filter(Boolean) as Project[];
+        });
 }
